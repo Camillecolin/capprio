@@ -1,0 +1,780 @@
+html, body, ul{
+  margin:0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+/*MENU*/
+a{
+  text-decoration: none;
+}
+
+header nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+  padding: 0px 150px 0px 150px;
+}
+
+.logo {
+  width: 130px;
+}
+header  ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+header  ul li {
+  list-style-type: none;
+  margin-left: 20px;
+  align-items: center;
+}
+
+header  ul li a {
+  color: grey;
+
+}
+
+header ul li a:hover {
+  color: #F55668;
+  transition: all 1s ease-in-out;
+}
+
+.hero{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+padding: 60px 0;
+animation-name: slideIn;
+animation-duration: 8s;
+animation-iteration-count: infinite;
+}
+
+@keyframes slideIn{
+0%{
+  background-color:blue;
+}
+25%{background-color:red;
+}
+50%{background-color:green;
+}
+100%{background-color:yellow;
+}
+}
+
+@keyframes rotate{
+  0%{transform: rotate(0deg)}
+  100%{transform: rotate(360deg)}
+}
+
+section h1{
+display: flex;
+color: white;
+font-size: 38px;
+align-items: center;
+margin: 0;
+}
+
+section h2{
+display: flex;
+color: #F55668;
+font-size: 20px;
+margin: 0;
+}
+
+
+.hero a{
+margin-top: 30px;
+color: white;
+font-size: 14px;
+border-radius: 100px;
+border: 2px solid #F55668;
+padding: 20px 45px ;
+}
+
+
+.hero a:hover{
+background-color: #F55668;
+transition: all 3s ease-in-out;
+}
+
+.politiques{
+  display: flex;
+  background-color:#C5CDD1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+
+}
+
+.politiques h3{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-size:42px;
+  color: #1D1742;
+  text-align: center;
+}
+
+.politiques h4{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-top: 2;
+  color: #F55668;
+  text-align: center;
+}
+
+.politiques ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75%;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+.politiques li {
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center;
+  list-style-type: none;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 0;
+  cursor: pointer;
+}
+
+.politiques li:hover{
+  animation: rotate 2s;
+}
+
+.politiques li:nth-child(1){
+  background-image: url(../img/00.jpg);
+}
+.politiques li:nth-child(2){
+  background-image: url(../img/01.jpg);
+}
+.politiques li:nth-child(3){
+  background-image: url(../img/04.jpg);
+}
+.politiques li:nth-child(4){
+  background-image: url(../img/07.jpg);
+}
+
+.politiques ul li span{
+color: #F55668;
+visibility: hidden;
+}
+
+.politiques ul li span:hover{
+  transition: all 0.5s ease-in-out;
+visibility: visible;
+}
+
+iframe{
+display: flex;
+justify-content: center;
+width: 100%;
+}
+
+.paragraph h4{
+display: flex;
+align-items: center;
+justify-content: center;
+font-size:26px;
+color: #f55668;
+text-align: center;
+text-transform : uppercase;
+letter-spacing: 1.2px;
+}
+
+.paragraph h1{
+display: flex;
+align-items: center;
+justify-content: center;
+font-size:42px;
+color: #f55668;
+text-align: center;
+letter-spacing: 1.2px;
+}
+
+.paragraph h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:18px;
+  color: #1D1742;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.paragraph p{
+margin: 0 auto 30px auto;
+text-align: justify;
+font-size: 20px;
+line-height: 26px;
+max-width: 800px;
+font-family: "Roboto", Arial , "Helvetica", sans-serif;
+color: #8C8C93;
+letter-spacing: 0.8px;
+font-weight: 300;
+letter-spacing: 1.2px;
+}
+
+.paragraph a{
+  font-family: "Roboto", Arial , "Helvetica", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: #F55668;
+  max-width: 800px;
+  width: 150px;
+  display: block;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  padding: 18px 18px 18px 18px;
+  border: 2px solid #F55668;
+  border-radius: 40px;
+  background: transparent;
+}
+
+.polaroid{
+  background-color: #1D1742;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+ul #carres{
+}
+
+ul#carres li {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 20px;
+  background: transparent;
+  box-shadow: 0px 0px 74px 0px rgba(29,23,65,0.40);
+  margin: 15;
+}
+
+footer nav .menu{
+
+  justify-content: flex-end;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin-left: 20px;
+  align-items: center;
+}
+
+nav ul li a {
+  color: grey;
+
+}
+
+nav ul li a:hover {
+  color: #F55668;
+  transition: all 1s ease-in-out;
+}
+
+.hero{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+padding: 60px 0;
+animation-name: slideIn;
+animation-duration: 8s;
+animation-iteration-count: infinite;
+}
+
+@keyframes slideIn{
+0%{
+  background-color:blue;
+}
+25%{background-color:red;
+}
+50%{background-color:green;
+}
+100%{background-color:yellow;
+}
+}
+
+@keyframes rotate{
+  0%{transform: rotate(0deg)}
+  100%{transform: rotate(360deg)}
+}
+
+section h1{
+display: flex;
+color: white;
+font-size: 38px;
+align-items: center;
+margin: 0;
+}
+
+section h2{
+display: flex;
+color: #F55668;
+font-size: 20px;
+margin: 0;
+}
+
+
+.hero a{
+margin-top: 30px;
+color: white;
+font-size: 14px;
+border-radius: 100px;
+border: 2px solid #F55668;
+padding: 20px 45px ;
+}
+
+
+.hero a:hover{
+background-color: #F55668;
+transition: all 3s ease-in-out;
+}
+
+.politiques{
+  display: flex;
+  background-color:#C5CDD1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+
+}
+
+.politiques h3{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-size:42px;
+  color: #1D1742;
+  text-align: center;
+}
+
+.politiques h4{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-top: 2;
+  color: #F55668;
+  text-align: center;
+}
+
+.politiques ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75%;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+.politiques li {
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center;
+  list-style-type: none;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 0;
+  cursor: pointer;
+}
+
+.politiques li:hover{
+  animation: rotate 2s;
+}
+
+.politiques li:nth-child(1){
+  background-image: url(../img/00.jpg);
+}
+.politiques li:nth-child(2){
+  background-image: url(../img/01.jpg);
+}
+.politiques li:nth-child(3){
+  background-image: url(../img/04.jpg);
+}
+.politiques li:nth-child(4){
+  background-image: url(../img/07.jpg);
+}
+
+.politiques ul li span{
+color: #F55668;
+visibility: hidden;
+}
+
+.politiques ul li span:hover{
+  transition: all 0.5s ease-in-out;
+visibility: visible;
+}
+
+iframe{
+display: flex;
+justify-content: center;
+width: 100%;
+}
+
+.paragraph h4{
+display: flex;
+align-items: center;
+justify-content: center;
+font-size:26px;
+color: #f55668;
+text-align: center;
+text-transform : uppercase;
+letter-spacing: 1.2px;
+}
+
+.paragraph h1{
+display: flex;
+align-items: center;
+justify-content: center;
+font-size:42px;
+color: #f55668;
+text-align: center;
+letter-spacing: 1.2px;
+}
+
+.paragraph h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:18px;
+  color: #1D1742;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.paragraph p{
+margin: 0 auto 30px auto;
+text-align: justify;
+font-size: 20px;
+line-height: 26px;
+max-width: 800px;
+font-family: "Roboto", Arial , "Helvetica", sans-serif;
+color: #8C8C93;
+letter-spacing: 0.8px;
+font-weight: 300;
+letter-spacing: 1.2px;
+}
+
+.paragraph a{
+  font-family: "Roboto", Arial , "Helvetica", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: #F55668;
+  max-width: 800px;
+  width: 150px;
+  display: block;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  padding: 18px 18px 18px 18px;
+  border: 2px solid #F55668;
+  border-radius: 40px;
+  background: transparent;
+}
+
+.polaroid{
+  background-color: #1D1742;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+ul #carres{
+}
+
+ul#carres li {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 20px;
+  background: transparent;
+  box-shadow: 0px 0px 74px 0px rgba(29,23,65,0.40);
+  margin: 15;
+}
+
+footer nav .menu{
+
+
+}
+
+  justify-content: flex-end;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin-left: 20px;
+  align-items: center;
+}
+
+nav ul li a {
+  color: grey;
+
+}
+
+nav ul li a:hover {
+  color: #F55668;
+  transition: all 1s ease-in-out;
+}
+
+.hero{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+padding: 60px 0;
+animation-name: slideIn;
+animation-duration: 8s;
+animation-iteration-count: infinite;
+}
+
+@keyframes slideIn{
+0%{
+  background-color:blue;
+}
+25%{background-color:red;
+}
+50%{background-color:green;
+}
+100%{background-color:yellow;
+}
+}
+
+@keyframes rotate{
+  0%{transform: rotate(0deg)}
+  100%{transform: rotate(360deg)}
+}
+
+section h1{
+display: flex;
+color: white;
+font-size: 38px;
+align-items: center;
+margin: 0;
+}
+
+section h2{
+display: flex;
+color: #F55668;
+font-size: 20px;
+margin: 0;
+}
+
+
+.hero a{
+margin-top: 30px;
+color: white;
+font-size: 14px;
+border-radius: 100px;
+border: 2px solid #F55668;
+padding: 20px 45px ;
+}
+
+
+.hero a:hover{
+background-color: #F55668;
+transition: all 3s ease-in-out;
+}
+
+.politiques{
+  display: flex;
+  background-color:#C5CDD1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+
+}
+
+.politiques h3{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-size:42px;
+  color: #1D1742;
+  text-align: center;
+}
+
+.politiques h4{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-top: 2;
+  color: #F55668;
+  text-align: center;
+}
+
+.politiques ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75%;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+.politiques li {
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center;
+  list-style-type: none;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 0;
+  cursor: pointer;
+}
+
+.politiques li:hover{
+  animation: rotate 2s;
+}
+
+.politiques li:nth-child(1){
+  background-image: url(../img/00.jpg);
+}
+.politiques li:nth-child(2){
+  background-image: url(../img/01.jpg);
+}
+.politiques li:nth-child(3){
+  background-image: url(../img/04.jpg);
+}
+.politiques li:nth-child(4){
+  background-image: url(../img/07.jpg);
+}
+
+.politiques ul li span{
+color: #F55668;
+visibility: hidden;
+}
+
+.politiques ul li span:hover{
+  transition: all 0.5s ease-in-out;
+visibility: visible;
+}
+
+iframe{
+display: flex;
+justify-content: center;
+width: 100%;
+}
+
+.paragraph h4{
+display: flex;
+align-items: center;
+justify-content: center;
+font-size:26px;
+color: #f55668;
+text-align: center;
+text-transform : uppercase;
+letter-spacing: 1.2px;
+}
+
+.paragraph h1{
+display: flex;
+align-items: center;
+justify-content: center;
+font-size:42px;
+color: #f55668;
+text-align: center;
+letter-spacing: 1.2px;
+}
+
+.paragraph h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:18px;
+  color: #1D1742;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.paragraph p{
+margin: 0 auto 30px auto;
+text-align: justify;
+font-size: 20px;
+line-height: 26px;
+max-width: 800px;
+font-family: "Roboto", Arial , "Helvetica", sans-serif;
+color: #8C8C93;
+letter-spacing: 0.8px;
+font-weight: 300;
+letter-spacing: 1.2px;
+}
+
+.paragraph a{
+  font-family: "Roboto", Arial , "Helvetica", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: #F55668;
+  max-width: 800px;
+  width: 150px;
+  display: block;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  padding: 18px 18px 18px 18px;
+  border: 2px solid #F55668;
+  border-radius: 40px;
+  background: transparent;
+}
+
+.polaroid{
+  background-color: #1D1742;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+ul #carres{
+}
+
+ul#carres li {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 20px;
+  background: transparent;
+  box-shadow: 0px 0px 74px 0px rgba(29,23,65,0.40);
+  margin: 15;
+}
+
+.navfooter ul{
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.navfooter ul li{
+  font-size: 16px;
+}

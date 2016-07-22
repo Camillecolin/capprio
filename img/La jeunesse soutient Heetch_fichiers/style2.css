@@ -1,0 +1,193 @@
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	cursor: pointer;
+	box-shadow: 
+		inset 0 0 0 0 rgba(245,86,104, 0.4),
+		inset 0 0 0 12px rgba(29,23,66,0.4),
+		0 0px 0px rgba(0,0,0,0);
+		
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+.ch-img-0 { 
+	background-image: url(../images/politique/00.jpg);
+}
+.ch-img-1 { 
+	background-image: url(../images/politique/01.jpg);
+}
+
+.ch-img-2 { 
+	background-image: url(../images/politique/02.jpg);
+}
+
+.ch-img-3 { 
+	background-image: url(../images/politique/03.jpg);
+}
+
+.ch-img-4 { 
+	background-image: url(../images/politique/04.jpg);
+}
+
+.ch-img-5 { 
+	background-image: url(../images/politique/05.jpg);
+}
+
+.ch-img-6 { 
+	background-image: url(../images/politique/06.jpg);
+}
+
+.ch-img-7 { 
+	background-image: url(../images/politique/07.jpg);
+}
+
+.ch-img-8 { 
+	background-image: url(../images/politique/08.jpg);
+}
+
+.ch-img-9 { 
+	background-image: url(../images/politique/09.jpg);
+}
+
+.ch-img-10 { 
+	background-image: url(../images/politique/10.jpg);
+}
+
+.ch-img-11 { 
+	background-image: url(../images/politique/11.jpg);
+}
+
+.ch-img-12 { 
+	background-image: url(../images/politique/12.jpg);
+}
+
+.ch-img-13 { 
+	background-image: url(../images/politique/13.jpg);
+}
+
+.ch-img-14 { 
+	background-image: url(../images/politique/14.jpg);
+}
+
+.ch-img-16 { 
+	background-image: url(../images/politique/16.jpg);
+}
+
+.ch-img-17 { 
+	background-image: url(../images/politique/17.jpg);
+}
+
+
+.ch-info {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	opacity: 0;
+	
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	
+	-webkit-backface-visibility: hidden; /*for a smooth font */
+
+}
+
+.ch-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin: 0;
+	padding: 0;
+	height: 35px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+.ch-info i {
+	color: #fff;
+}
+
+.ch-info p {
+	color: #fff;
+	padding: 0px 5px;
+	margin: 70px auto 0px auto;
+	font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+	
+}
+
+.ch-info p a {
+	display: block;
+	color: #fff;
+	color: rgba(255,255,255,0.7);
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 9px;
+	letter-spacing: 1px;
+	padding-top: 4px;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ch-info p a:hover {
+	color: #fff222;
+	color: rgba(255,242,34, 0.8);
+}
+
+.ch-item:hover {
+	box-shadow: 
+		inset 0 0 0 110px rgba(245,86,104, 0.6),
+		inset 0 0 0 16px rgba(245,86,104,0.9),
+		0 1px 2px rgba(0,0,0,0.1);
+}
+
+.ch-item:hover .ch-info {
+	opacity: 1;
+	
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);	
+}
+
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
